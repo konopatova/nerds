@@ -28,6 +28,12 @@ html, body {
 	height: 100%;
 }
 
+:active, :hover, :focus {
+	outline: 0 !important;
+	outline-offset: 0 !important;
+	box-shadow: none;
+}
+
 body {
 	font-size: 16px;
 	min-width: 320px;
@@ -123,6 +129,8 @@ a {
 .menu {
 	display: flex;
 	flex-flow: row wrap;
+	padding-top: 7px;
+	flex-wrap: nowrap;
 	.menu__item {
 		margin-right: 48px;
 		&:last-child {
@@ -135,10 +143,13 @@ a {
 	}
 }
 
-.active::before {
+.active {
+	&::after {
 	content: '';
 	border-bottom: 2px solid $accent;
 	padding-top: 5px;
+	display: block;
+	}
 }
 
 .menu__item--cart {
@@ -148,9 +159,212 @@ a {
 	}
 
 .logo__block {
+	margin-top: -10px;
 	margin-right: 200px;
+	img {
+		&:hover {
+			transform: scale(1.1);
+			transition: all 0.3s ease-in-out;
+		}
+	}
+}
+
+.header__slider {
+	min-height: 412px;
+	margin-top: 20px;
+	.header__slider__inner {
+		max-width: 520px;
+	}
+	.header__slider__title {
+		font-size: 55px;
+		line-height: 1;
+		font-weight: 500;
+		padding-top: 64px;
+		margin-bottom: 29px;
+	}
+	.header__slider__text {
+		color: $text-light;
+		margin-bottom: 46px;
+	}
+	&.header__slider__1 {
+		background-image: url(../img/slide1.png);
+    background-repeat: no-repeat;
+		background-size: contain;
+		background-position: 90% -10%;
+	}
+	&.header__slider__2 {
+		background-image: url(../img/slide2.png);
+    background-repeat: no-repeat;
+		background-size: contain;
+		background-position: 90% -10%;
+	}
+	&.header__slider__3 {
+		background-image: url(../img/slide3.png);
+    background-repeat: no-repeat;
+		background-size: contain;
+		background-position: 90% -10%;
+	}
 }
 
 
+.slick-dots {
+	width: 50%;
+	left: 26%;
+	position: absolute;
+	bottom: 20%;
+	 .slick-active button:before {
+    width: 8px;
+		height: 8px;
+		left: 20%;
+		top: 20%;
+    border: 2px solid #c1c1c1;
+    background-color: transparent;
+    opacity: 1;
+	}
+	li button {
+    font-size: 0;
+    line-height: 0;
+    display: block;
+    width: 18px;
+    height: 18px;
+    padding: 5px;
+    cursor: pointer;
+    color: transparent;
+    border: 0;
+    outline: none;
+		background: transparent;
+		&::before {
+				content: '';
+				opacity: 1;
+				width: 18px;
+    		height: 18px;
+				background-color: #fff;
+				border: transparent;
+				border-radius: 100%;
+		}
+}
+}
+
+.slick-prev:before, 
+.slick-next:before {
+	width: 40px;
+	height: 40px;
+	display: block;
+	position: relative;
+	margin-top: -220px;
+	font-family: "slick";
+	border-radius: 100%;
+	font-size: 32px;
+	line-height: 1;
+	color: black;
+	opacity: 0.75;
+	-webkit-font-smoothing: antialiased;
+	transform: translateY(50%);
+}
+
+.slick-prev:before {
+	position: absolute;
+	left: 4vw;
+	z-index: 10;
+	background-color: $accent;
+}
+
+.slick-next:before {
+	position: absolute;
+	right: 4vw;
+	z-index: 10;
+	background-color: $accent;
+}
+
+.btn {
+	display: inline-block;
+	text-transform: uppercase;
+	font-weight: 400;
+	color: white;
+	text-decoration: none;
+	border-radius: 3px;
+	padding: 9px 56px;
+	text-align: center;
+	outline: 0;
+	white-space: nowrap;
+	transition: all 0.1s ease-in-out;
+	outline: 0;
+	&:focus,
+  &.focus {
+    outline: 0;
+    box-shadow: none;
+	}
+	
+		&.btn--red {
+			background-color: $accent;
+			&:hover {
+				color: white;
+				background-color: #e74246;
+			}
+			&:active {
+				color: rgba($color: white, $alpha: 0.3);
+				background-color: #d7373b;
+				box-shadow: 0 2px 2px 0 #c13135 inset;
+			}
+		}
+		&.btn--green {
+			background-color: $accent-g;
+			&:hover {
+				color: white;
+				background-color: #00bc6c;
+			}
+			&:active {
+				color: rgba($color: white, $alpha: 0.3);
+				background-color: #00aa62;
+				box-shadow: 0 2px 2px 0 #007544 inset;
+			}
+		}
+		&.btn--yellow {
+			background-color: $accent-y;
+			&:hover {
+				color: white;
+				background-color: #eab534;
+			}
+			&:active {
+				color: rgba($color: white, $alpha: 0.3);
+				background-color: #e5a722;
+				box-shadow: 0 2px 2px 0 #cc9215 inset;
+			}
+		}
+}
+
+.work {
+	margin-top: 80px;
+	margin-bottom: 120px;
+	.work__item {
+		max-width: 300px;
+		margin-bottom: 40px;
+		.work__item__img {
+			margin-bottom: 28px;
+		}
+		.work__item__title {
+			font-size: 24px;
+			font-weight: 700;
+			margin-bottom: 26px;
+			text-transform: uppercase;
+		}
+		.work__item__text {
+			margin-bottom: 26px;
+			padding-right: 17%;
+			color: $text-light;
+		}
+	}
+	.btn {
+		padding: 9px 38px;
+	}
+}
+
+.about {
+	.about__title {
+		font-size: 45px;
+		line-height: 1;
+		font-weight: 500;
+	}
+}
 
 @import "media"; // Always at the end

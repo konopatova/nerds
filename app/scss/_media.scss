@@ -4,86 +4,25 @@
 
 // ≥1200px
 @include media-breakpoint-down(lg) {
-	.design__items__list {
-		.design__item {
-			max-width: 325px;
-		}
-	}
+
 }
 
 // ≥992px
 @include media-breakpoint-down(md) {
 
-	.design__item__img--2 {
-		min-width: 325px;
-		max-width: 400px;
+	.logo__block {
+		margin-bottom: 20px;
 	}
-	
-	.design__items__list {
-		display: flex;
-	.design__item {
-		max-width: 325px;
-		font-size: 14px;
-		margin-bottom: 50px;
-	}
-	.design__item--3,
-	.design__item--4 {
-		margin-bottom: 0;
-		}
-}
-
-
-.advantage__title {
-	&--visible {
-	display: none;
-	}
-	&--hidden {
-		display: block;
-	}
-}
-
 
 }
 
 // ≥768px
 @include media-breakpoint-down(sm) {
 
-	.design__item__img--2 {
-		min-width: 325px;
-		max-width: 400px;
-	}
-	
-.accessories__items__list {
-	.accessories__item {
-		font-weight: 500;
-		font-size: 14px;
-		margin-right: 20px;
-		margin-bottom: 50px;
-		transition: all 0.25s ease-in-out;
-			&:hover {
-				transform: scale(1.1);
-			}
-		}
-		.accessories__item--3, 	.accessories__item--4 {
-			margin-bottom: 0px;
-		}
-	.accessories__item__img {
-			display: block;
-			text-align: center;
-			margin: 0 auto;
-			margin-bottom: 46px;
-		}
-	}
 
-	.shooting__items__list {
-		.shooting__item {
-			font-size: 14px;
-	}}
-
-	.apps__items__list {
-		.apps__item {
-			max-width: 210px;
-			font-size: 14px;
+.header__slider {
+	.header__slider__inner {
+		padding-top: 300px; 
 	}
 }
 
@@ -92,104 +31,30 @@
 // ≥576px
 @include media-breakpoint-down(xs) {
 
-		.design__items__list {
-			.design__item {
-				font-weight: 500;
-				margin-right: 20px;
-				transition: all 0.25s ease-in-out;
-				}
-				.design__item__img--2 {
-					min-width: 290px;
-					max-width: 400px;
-				}
-				.design__item--1,
-				.design__item--2 {
-					font-size: 14px;
-					line-height: 150%;
-					max-width: 400px;
-				} 
-				.design__item--3,
-				.design__item--4 {
-					font-size: 12px;
-					line-height: 142%;
-					max-width: 142px;
-					margin-right: 8px;
-				} 
-			}
 
-		.header__title {
-			display: none;
-		}
-
-		.shooting__items__list {
-			.shooting__item {
-				font-size: 14px;
-				line-height: 150%;
-				padding-left: 0;
-				padding-top: 70px;
-				margin-bottom: 30px;
-				background-repeat: no-repeat;
-				min-height: 60px;
-				background-position: 50% -3%;
-				&.shooting__item--1 {
-					background-image: url(../img/shoot1.png);
-				}
-				&.shooting__item--2 {
-					background-image: url(../img/shoot2.png);
-				}
-				&.shooting__item--3 {
-					background-image: url(../img/shoot3.png);
-				}
-		}}
-
-		.accessories__items__list {
-			.accessories__item--3, 	
-				.accessories__item--4 {
-					font-size: 12px;
-					line-height: 142%;
-					max-width: 142px;
-					margin-right: 8px;
-				}
+.header__slider {
+.header__slider__inner {
+	padding-top: 200px; 
+}
 }
 
-.apps__items__list {
-	.apps__item {
-		display: flex;
-		flex-direction: row;
-		justify-content: space-between;
-		align-content: space-between;
-		font-size: 12px;
-		line-height: 142%;
-		font-weight: 500;
-		margin-bottom: 65px;
-		margin-right: 0px;
-		min-width: 290px;
-    max-width: 400px;
-		}
-		.apps__item--2,
-		.apps__item--4 {
-			flex-direction: row-reverse;
-			justify-content: space-between;
-			align-content: space-between;
-			margin-right: 0px;
-			}
-		.apps__item__img {
-			width: 60px;
-			height: 60px;
-			margin: 0 auto;
-			margin-bottom: 0px;
-			margin-right: 26px;
-			display: block;
-			text-align: center;
-		}
+.work {
+	margin-top: 20px;
 }
 
+.menu__item--cart {
+	margin: 8px 0 auto 0;
 }
+	
+}
+
+
 
 /*==========  Mobile First  ==========*/
 
 // ≤576px
 @include media-breakpoint-up(sm) {
+
 
 }
 
