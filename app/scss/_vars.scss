@@ -1,16 +1,18 @@
 
-$default-font: 'PT Root';
-$eldorado: #78BD20;
-$mvideo: #ED1D24;
+$default-font: 'Roboto';
+
 
 // vars
 $bg: white;
 $text: black;
-$accent: #78BD20;
-$btn-normal: #573930;
-$btn-active: #3f2923;
+$text-light: #283136;
+$accent: #fb565a;
+$accent-g: #00ca74;
+$accent-y: #efc849;
 $wrong: red;
-$disabled: #373737;
+$disabled: #bec1c2;
+$static: #d7dcde;
+
 
 // Customization Bootstrap vars from "app/libs/bootstrap/scss/_variables.scss"
 $grid-gutter-width: 0px;
