@@ -17211,6 +17211,7 @@ body input, body textarea {
 }
 
 body input:focus:required:invalid, body textarea:focus:required:invalid {
+  color: red;
   border: red 2px solid;
 }
 
@@ -17837,7 +17838,7 @@ svg.cart__button {
 }
 
 .modal__callback {
-  display: block;
+  display: none;
   padding: 65px 100px 85px;
   width: 760px;
   background-color: white;
@@ -17896,10 +17897,12 @@ svg.cart__button {
 }
 
 .modal__callback .form-feedback__text:hover {
+  color: #b4b9bb;
   border-color: #b4b9bb;
 }
 
 .modal__callback .form-feedback__text:focus {
+  color: black;
   border-color: black;
 }
 

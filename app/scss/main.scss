@@ -48,6 +48,7 @@ body {
 		border: $static 2px solid;
 		outline: none;
 		&:focus:required:invalid {
+      color: $wrong;
 			border: $wrong 2px solid;
 		}
 		&:required:valid {
@@ -574,7 +575,7 @@ margin-bottom: 80px;
 }
 
 .modal__callback {
-	display: block;
+	display: none;
 	padding: 65px 100px 85px;
 	width: 760px;
 	background-color: white;
@@ -616,9 +617,11 @@ margin-bottom: 80px;
     border: 2px solid #d7dcde;
 		border-radius: 3px;
 		&:hover {
+			color: #b4b9bb;
 			border-color: #b4b9bb;
 		}
 		&:focus {
+			color: black;
 			border-color: black;
 		}
 	}
