@@ -17796,6 +17796,134 @@ svg.cart__button {
 #map {
   width: 100%;
   height: 412px;
+  z-index: 4;
+  position: relative;
+  background-image: url(../img/map.jpg);
+  background-position: 50% 50%;
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+
+.map__block {
+  position: relative;
+}
+
+.map__block .map__contact {
+  padding: 50px 55px;
+  position: absolute;
+  max-width: 320px;
+  top: 62px;
+  left: 150px;
+  background-color: white;
+  z-index: 5;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+}
+
+.map__block .contact__title {
+  font-size: 18px;
+  font-weight: 700;
+  margin-bottom: 20px;
+}
+
+.map__block .contact__text {
+  line-height: 1.25;
+  color: #666666;
+}
+
+.map__block .btn {
+  margin-top: 10px;
+  padding: 9px 40px;
+}
+
+.modal {
+  margin: 0 auto;
+  max-width: 960px;
+  background-color: white;
+  padding: 68px 100px;
+}
+
+.modal label {
+  font-weight: 700;
+  font-size: 16px;
+  display: block;
+  margin-bottom: 6px;
+}
+
+.modal .modal__title {
+  font-size: 45px;
+  line-height: 1;
+  font-weight: 500;
+  margin-bottom: 26px;
+}
+
+.socials {
+  font-size: 0;
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  margin-top: -2%;
+  margin-bottom: 20px;
+}
+
+.socials .social__icon__link {
+  position: relative;
+  font-size: 0;
+  display: inline-block;
+  width: 80px;
+  height: 80px;
+  background-color: #e1e1e1;
+  border-radius: 50%;
+  margin-right: 10px;
+  margin-top: 4px;
+  -webkit-transition: background 0.6s ease;
+  -o-transition: background 0.6s ease;
+  transition: background 0.6s ease;
+}
+
+.socials .social__icon__link:hover {
+  background-color: #fb565a;
+}
+
+.socials .social__icon__link:active {
+  color: rgba(255, 255, 255, 0.3);
+  background-color: #d7373b;
+  -webkit-box-shadow: 0 2px 2px 0 #c13135 inset;
+          box-shadow: 0 2px 2px 0 #c13135 inset;
+  top: 2px;
+}
+
+.socials svg {
+  width: 26px;
+  height: 26px;
+  position: relative;
+}
+
+.socials svg.instagram__button {
+  margin-top: 37%;
+  margin-left: 36%;
+}
+
+.socials svg.fb__button {
+  margin-top: 34%;
+  margin-left: 41%;
+}
+
+.socials svg.vk__button {
+  margin-top: 43%;
+  margin-left: 34%;
+}
+
+.friendship .friendship__title {
+  font-size: 36px;
+  margin-bottom: 14px;
+  font-weight: 500;
+  line-height: 1;
+}
+
+.friendship .friendship__text {
+  font-size: 16px;
 }
 
 /*==========  Desktop First  ==========*/
