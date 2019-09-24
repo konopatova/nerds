@@ -17745,7 +17745,13 @@ svg.cart__button {
   text-transform: initial;
 }
 
+.products {
+  position: relative;
+  margin-bottom: 80px;
+}
+
 .products .product__item {
+  position: relative;
   margin-bottom: 30px;
 }
 
@@ -17765,6 +17771,31 @@ svg.cart__button {
   -webkit-transition: all 0.1s ease-in-out;
   -o-transition: all 0.1s ease-in-out;
   transition: all 0.1s ease-in-out;
+}
+
+.products::before {
+  content: '';
+  width: 100%;
+  height: 1px;
+  background-color: rgba(0, 0, 0, 0.1);
+  top: -40%;
+  left: 0;
+  position: absolute;
+}
+
+.products::after {
+  content: '';
+  width: 100%;
+  height: 1px;
+  background-color: rgba(0, 0, 0, 0.1);
+  bottom: -10%;
+  left: 0;
+  position: absolute;
+}
+
+#map {
+  width: 100%;
+  height: 412px;
 }
 
 /*==========  Desktop First  ==========*/
