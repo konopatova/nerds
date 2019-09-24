@@ -129,10 +129,30 @@ a {
 .menu {
 	display: flex;
 	flex-flow: row wrap;
-	padding-top: 7px;
 	flex-wrap: nowrap;
 	.menu__item {
 		margin-right: 48px;
+		position: relative;
+		&.active:after {
+			content: '';
+			position: absolute;
+			height: 2px !important;
+			width: 100%;
+			left: 0;
+			bottom: -22%;
+			background-color: $accent;
+		}
+		&:hover:after {
+			content: '';
+			position: absolute;
+			height: 4px !important;
+			width: 100%;
+			left: 0;
+			bottom: -22%;
+			background-color: $accent;
+			transition: 0.3s ease all;
+			animation: 0.5s ease-in-out show;
+		}
 		&:last-child {
 			margin-right: 0;
 		}
@@ -143,20 +163,40 @@ a {
 	}
 }
 
-.active {
+/*.active /*{
 	&::after {
 	content: '';
 	border-bottom: 2px solid $accent;
 	padding-top: 5px;
 	display: block;
-	}
-}
+	}}*/
 
 .menu__item--cart {
 	text-transform: uppercase;
 	font-weight: 500;
 	margin-left: auto;
+	position: relative;
+	&.active:after {
+		content: '';
+		position: absolute;
+		height: 2px !important;
+		width: 100%;
+		left: 0;
+		bottom: -22%;
+		background-color: $accent;
 	}
+	&:hover:after {
+		content: '';
+		position: absolute;
+		height: 4px !important;
+		width: 100%;
+		left: 0;
+		bottom: -22%;
+		background-color: $accent;
+		transition: 0.3s ease all;
+		animation: 0.5s ease-in-out show;
+	}
+}
 
 .logo__block {
 	margin-top: -10px;
@@ -279,6 +319,7 @@ a {
 .btn {
 	display: inline-block;
 	text-transform: uppercase;
+	position: relative;
 	font-weight: 400;
 	color: white;
 	text-decoration: none;
@@ -287,7 +328,7 @@ a {
 	text-align: center;
 	outline: 0;
 	white-space: nowrap;
-	transition: all 0.1s ease-in-out;
+	transition: background-color 0.05s ease-in-out;
 	outline: 0;
 	&:focus,
   &.focus {
@@ -305,6 +346,7 @@ a {
 				color: rgba($color: white, $alpha: 0.3);
 				background-color: #d7373b;
 				box-shadow: 0 2px 2px 0 #c13135 inset;
+				top: 2px;
 			}
 		}
 		&.btn--green {
@@ -317,6 +359,7 @@ a {
 				color: rgba($color: white, $alpha: 0.3);
 				background-color: #00aa62;
 				box-shadow: 0 2px 2px 0 #007544 inset;
+				top: 2px;
 			}
 		}
 		&.btn--yellow {
@@ -329,6 +372,7 @@ a {
 				color: rgba($color: white, $alpha: 0.3);
 				background-color: #e5a722;
 				box-shadow: 0 2px 2px 0 #cc9215 inset;
+				top: 2px;
 			}
 		}
 }

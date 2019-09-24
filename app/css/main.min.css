@@ -17091,39 +17091,37 @@ html {
 
 @-webkit-keyframes show {
   0% {
-    -webkit-transform: translateY(-100px);
-            transform: translateY(-100px);
+    width: 30%;
   }
-  70% {
-    -webkit-transform: translateY(30px);
-            transform: translateY(30px);
+  /* 70% {
+	//	transform: translateY(20px);
+		width: 100%;
   }
+
   90% {
-    -webkit-transform: translateY(-10px);
-            transform: translateY(-10px);
-  }
+	//	transform: translateY(-10px);
+		width: 40%;
+  }*/
   100% {
-    -webkit-transform: translateY(0);
-            transform: translateY(0);
+    width: 100%;
   }
 }
 
 @keyframes show {
   0% {
-    -webkit-transform: translateY(-100px);
-            transform: translateY(-100px);
+    width: 30%;
   }
-  70% {
-    -webkit-transform: translateY(30px);
-            transform: translateY(30px);
+  /* 70% {
+	//	transform: translateY(20px);
+		width: 100%;
   }
+
   90% {
-    -webkit-transform: translateY(-10px);
-            transform: translateY(-10px);
-  }
+	//	transform: translateY(-10px);
+		width: 40%;
+  }*/
   100% {
-    -webkit-transform: translateY(0);
-            transform: translateY(0);
+    width: 100%;
   }
 }
 
@@ -17307,7 +17305,6 @@ a:hover {
   -webkit-flex-flow: row wrap;
       -ms-flex-flow: row wrap;
           flex-flow: row wrap;
-  padding-top: 7px;
   -webkit-flex-wrap: nowrap;
       -ms-flex-wrap: nowrap;
           flex-wrap: nowrap;
@@ -17315,6 +17312,32 @@ a:hover {
 
 .menu .menu__item {
   margin-right: 48px;
+  position: relative;
+}
+
+.menu .menu__item.active:after {
+  content: '';
+  position: absolute;
+  height: 2px !important;
+  width: 100%;
+  left: 0;
+  bottom: -22%;
+  background-color: #fb565a;
+}
+
+.menu .menu__item:hover:after {
+  content: '';
+  position: absolute;
+  height: 4px !important;
+  width: 100%;
+  left: 0;
+  bottom: -22%;
+  background-color: #fb565a;
+  -webkit-transition: 0.3s ease all;
+  -o-transition: 0.3s ease all;
+  transition: 0.3s ease all;
+  -webkit-animation: 0.5s ease-in-out show;
+          animation: 0.5s ease-in-out show;
 }
 
 .menu .menu__item:last-child {
@@ -17326,17 +17349,43 @@ a:hover {
   font-weight: 500;
 }
 
-.active::after {
-  content: '';
-  border-bottom: 2px solid #fb565a;
-  padding-top: 5px;
-  display: block;
-}
-
+/*.active /*{
+	&::after {
+	content: '';
+	border-bottom: 2px solid $accent;
+	padding-top: 5px;
+	display: block;
+	}}*/
 .menu__item--cart {
   text-transform: uppercase;
   font-weight: 500;
   margin-left: auto;
+  position: relative;
+}
+
+.menu__item--cart.active:after {
+  content: '';
+  position: absolute;
+  height: 2px !important;
+  width: 100%;
+  left: 0;
+  bottom: -22%;
+  background-color: #fb565a;
+}
+
+.menu__item--cart:hover:after {
+  content: '';
+  position: absolute;
+  height: 4px !important;
+  width: 100%;
+  left: 0;
+  bottom: -22%;
+  background-color: #fb565a;
+  -webkit-transition: 0.3s ease all;
+  -o-transition: 0.3s ease all;
+  transition: 0.3s ease all;
+  -webkit-animation: 0.5s ease-in-out show;
+          animation: 0.5s ease-in-out show;
 }
 
 .logo__block {
@@ -17473,6 +17522,7 @@ a:hover {
 .btn {
   display: inline-block;
   text-transform: uppercase;
+  position: relative;
   font-weight: 400;
   color: white;
   text-decoration: none;
@@ -17481,9 +17531,9 @@ a:hover {
   text-align: center;
   outline: 0;
   white-space: nowrap;
-  -webkit-transition: all 0.1s ease-in-out;
-  -o-transition: all 0.1s ease-in-out;
-  transition: all 0.1s ease-in-out;
+  -webkit-transition: background-color 0.05s ease-in-out;
+  -o-transition: background-color 0.05s ease-in-out;
+  transition: background-color 0.05s ease-in-out;
   outline: 0;
 }
 
@@ -17507,6 +17557,7 @@ a:hover {
   background-color: #d7373b;
   -webkit-box-shadow: 0 2px 2px 0 #c13135 inset;
           box-shadow: 0 2px 2px 0 #c13135 inset;
+  top: 2px;
 }
 
 .btn.btn--green {
@@ -17523,6 +17574,7 @@ a:hover {
   background-color: #00aa62;
   -webkit-box-shadow: 0 2px 2px 0 #007544 inset;
           box-shadow: 0 2px 2px 0 #007544 inset;
+  top: 2px;
 }
 
 .btn.btn--yellow {
@@ -17539,6 +17591,7 @@ a:hover {
   background-color: #e5a722;
   -webkit-box-shadow: 0 2px 2px 0 #cc9215 inset;
           box-shadow: 0 2px 2px 0 #cc9215 inset;
+  top: 2px;
 }
 
 .work {
