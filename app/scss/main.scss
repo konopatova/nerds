@@ -7,7 +7,7 @@
 @import "mixins";
 
 ::placeholder {
-	color: black;
+	color: #444444;
 }
 
 ::selection {
@@ -333,7 +333,7 @@ svg {
 	text-align: center;
 	outline: 0;
 	white-space: nowrap;
-	transition: background-color 0.05s ease-in-out;
+	transition: background-color 0.5s ease-in-out;
 	outline: 0;
 	&:focus,
   &.focus {
@@ -573,25 +573,82 @@ margin-bottom: 80px;
 	}
 }
 
-.modal {
-	//display: block;
-	margin: 0 auto;
-	max-width: 960px;
+.modal__callback {
+	display: block;
+	padding: 65px 100px 85px;
+	width: 760px;
 	background-color: white;
-	padding: 68px 100px;
-	label {
-		font-weight: 700;
-		font-size: 16px;
-		display: block;
-		margin-bottom: 6px;
-	}
+	box-shadow: 0 20px 40px 0 rgba(0,1,1,.75);
+	position: fixed;
+	z-index: 100;
+	top: 50%;
+	left: 50%;
+	transform: translate(-50%,-50%);
 	.modal__title {
-		font-size: 45px;
-		line-height: 1;
-		font-weight: 500;
-		margin-bottom: 26px;
+		margin-top: 0;
+    margin-bottom: 40px;
+    font-size: 45px;
+    font-weight: 500;
+    line-height: 45px;
+	}
+	.form-feedback__row {
+    display: flex;
+    justify-content: space-between;
+    margin-bottom: 34px;
+	}
+	.form-feedback__column {
+    width: 260px;
+	}
+	.form-feedback__label {
+    display: block;
+    margin-bottom: 10px;
+    font-size: 16px;
+    font-weight: 500;
+    line-height: 18px;
+    color: black;
+	}
+	.form-feedback__text {
+		width: 100%;
+    padding: 14px;
+    font-size: 16px;
+    line-height: 18px;
+    color: #444444;
+    border: 2px solid #d7dcde;
+		border-radius: 3px;
+		&:hover {
+			border-color: #b4b9bb;
+		}
+		&:focus {
+			border-color: black;
+		}
+	}
+	.form-feedback__row-message {
+    flex-direction: column;
+    margin-bottom: 47px;
+	}
+	.btn {
+    padding: 16px 84px;
+}
+.form-feedback__close {
+	position: absolute;
+	top: 78px;
+	right: 90px;
+	padding: 0;
+	width: 25px;
+	height: 25px;
+	background-image: url(../img/close-cross.svg);
+	background-repeat: no-repeat;
+	opacity: 0.3;
+	transition: opacity 0.5s ease-in-out;
+	cursor: pointer;
+	&:hover {
+		opacity: 1;
+		transition: opacity 0.5s ease-in-out;
+		cursor: pointer;
+	}
 	}
 }
+
 
 .socials {
 	font-size: 0;

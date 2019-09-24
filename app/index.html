@@ -16,7 +16,7 @@
 	<link rel="stylesheet" href="css/main.min.css">
 
 
-	<title>Nerds</title>
+	<title>Nёrds</title>
 </head>
 <body>
 
@@ -25,7 +25,7 @@
 				<div class="row align-items-center">		
 						<div class="logo__block">
 					<a href="#" class="header__logo__link">
-						<img src="./img/nerds-logo.svg" alt="Nerds" width="160px">
+						<img src="./img/nerds-logo.svg" alt="Nёrds" width="160px">
 					</a>
 				</div>
 
@@ -186,22 +186,30 @@
 					</form>
 		</section>	
 
-		<section class="modal modal__callback">
+		<section class="modal__callback">
         <h6 class="modal__title">Напишите нам</h6>
         <form class="callback" name="callback" method="post" action="https://echo.htmlacademy.ru">
-          <div class="form__group">
-            <label for="callback__name">Ваше имя:</label>
-            <input type="text" name="callback__name" id="callback__name" placeholder="Представьтесь, пожалуйста">
+          <div class="form-feedback__row">
+						<div class="form-feedback__column">
+							<label class="form-feedback__label" for="feedback-name">Ваше имя:</label>
+							<input class="form-feedback__text" type="text" name="name" id="feedback-name" placeholder="Представьтесь, пожалуйста" required="">
+						</div>
+						
+						<div class="form-feedback__column">
+							<label class="form-feedback__label" for="feedback-email">Ваш e-mail:</label>
+							<input class="form-feedback__text" type="email" name="email" id="feedback-email" placeholder="Для отправки ответа" required="">
+						</div>
 					</div>
-					<div class="form__group">
-            <label for="callback__email">Ваш e-mail:</label>
-            <input type="email" name="callback__email" id="callback__email" placeholder="Для отправки ответа">
-          </div>
-          <label for="input-message">Текст письма:</label><textarea name="callnack__message" rows="8" cols="80" placeholder="В свободной форме"></textarea>
-          <button class="button callback__submit" type="submit">Отправить</button>
+
+			<div class="form-feedback__row form-feedback__row-message">
+				<label class="form-feedback__label" for="feedback-message">Текст письма:</label>
+					<textarea class="form-feedback__text form-feedback__textarea" name="message" id="feedback-message" placeholder="В свободной форме">
+					</textarea>
+				</div>
+				<button class="btn btn--red form-feedback__button" type="submit">Отправить</button>
+				<button class="form-feedback__close" aria-label="Закрыть" type="button"></button>
         </form>
-				
-				<button class="modal__close" type="button">Закрыть</button>
+	
       </section>
 			
 
