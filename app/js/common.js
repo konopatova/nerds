@@ -71,7 +71,59 @@ function initMap() {
 			},
 			title: "Nёrds",
 	})
-
 }
 
+/*document.getElementById('btn__write-us').addEventListener('click', 
+function() {
+document.querySelector('.modal__callback').style.display = 'block';});*/
 
+$(document).ready(function(){
+  // Feedback form
+		var modal = document.querySelector('.modal__callback');
+		var showModalBtn = document.querySelector('#btn__write-us');
+		var open = document.querySelector('.open');
+		var closeBtn = document.querySelector('#close');
+		var login = document.querySelector('[name=login]');
+		var storage = localStorage.getItem('login');
+		var password = document.querySelector('[name=password]');
+		var form = document.querySelector('form');
+		var filledLogin = form.querySelector ('[name=login].filled');
+		var filledPassword = form.querySelector ('[name=password].filled');
+		var emptyLogin = form.querySelector('[name=login].empty');
+		var emptyPassword = form.querySelector('[name=password].empty');
+
+// Form opening, closure and animation for error indication
+		showModalBtn.onclick = function(event) {
+  	event.preventDefault();
+    modal.classList.add('open');
+    login.focus();
+  
+      if (storage) {
+          login.value = storage
+          password.focus();
+      } else {
+          login.focus();
+      }
+};
+		closeBtn.onclick = function(close) {
+		modal.classList.toggle('open');
+};
+
+ // Form closure with Esc
+window.addEventListener('keydown', function(esc) {
+	if (esc.keyCode===27) {
+			modal.classList.remove('open');
+	}
+});
+
+// Form closure when clicking outside of its borders
+$('body').click(function(e) {
+	if (modal.hasClass('open')
+	&& ($(e.target).closest(modal).length===0) && (!$(e.target).hasClass('btn__write-us'))) {
+		modal.removeClass('open');
+	}
+});
+
+
+
+});
