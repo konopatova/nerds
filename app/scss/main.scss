@@ -919,14 +919,18 @@ margin-bottom: 80px;
 
 
 .catalog__block {
-	max-width: 760px;
-	.catalog__sort{
+	width: 760px;
+	.catalog__sort {
+		display: flex;
+		justify-content: space-between;
+		align-items: center;
 		.sort__legend{
 			max-width: 360px;
 			font-size: 16px;
 			text-transform: uppercase;
 			font-weight: 700;
-			margin-bottom: 22px;
+			margin: 0;
+			padding: 0;
 			letter-spacing: 0.05px;
 		}
 		}
