@@ -42,25 +42,33 @@
 
 @keyframes show {
   0% {
-	//	transform: translateY(-100px);
 		width: 30%;
   }
 
- /* 70% {
-	//	transform: translateY(20px);
-		width: 100%;
-  }
-
-  90% {
-	//	transform: translateY(-10px);
-		width: 40%;
-  }*/
-
   100% {
-	//	transform: translateY(0);
 		width: 100%;
   }
 }
+
+@keyframes modalOpen {
+  0% {
+		transform: translate(-50%, -100%);
+  }
+
+ 70% {
+	transform: translate(-50%, 20%);
+	}
+
+	90% {
+		transform: translate(-50%, -10%);
+		}
+		
+	
+  100% {
+		transform: translate(-50%, -50%);
+  }
+}
+
 
 
 @keyframes opacity {

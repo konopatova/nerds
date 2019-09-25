@@ -59,6 +59,8 @@
 
 		<main>
 			<div class="container">
+				<div class="row justify-content-between flex-lg-nowrap">
+
 			<section class="sidebar">
 					<form class="form-filters" action="https://echo.htmlacademy.ru" method="GET">
 
@@ -124,10 +126,26 @@
 			</section>
 
 			<section class="catalog__block">
-				
+				<div class="catalog__sort">
+					<legend class="sort__legend">Сортировать:</legend>
+					<div class="catalog__sort-type-wrapper">
+
+						<ul class="catalog__sort-type sort-type">
+							<li class="sort-type__item"><a class="sort-type__link sort-type__link active">По цене</a></li>
+								<li class="sort-type__item"><a class="sort-type__link" href="#">По типу</a></li>
+								<li class="sort-type__item"><a class="sort-type__link" href="#">По названию</a></li>
+							</ul>
+
+							<ul class="catalog__sort-dir sort-dir">
+								<li class="sort-dir__item"><a class="sort-dir__link sort-dir__link--down active" aria-label="Вниз"></a></li>
+								<li class="sort-dir__item"><a class="sort-dir__link sort-dir__link--up" href="#" aria-label="Вверх"></a></li>
+							</ul>
+							
+						</div>
+				</div>
 			</section>
 			</div>
-
+	</div>
 
 			<section class="map__block">
 				<div id="map"></div>	
