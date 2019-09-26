@@ -1059,7 +1059,7 @@ margin-bottom: 80px;
 		margin-bottom: 73px;
 		position: relative;
 		transition: 0.4s ease-in-out;
-		will-change: transform;
+		will-change: transform, box-shadow;
 		box-sizing: content-box;
 		&::before {
 			content: '';
@@ -1080,6 +1080,7 @@ margin-bottom: 80px;
 		}
 		&:hover {
 			transform: scale(1.05);
+			box-shadow: 0px 6px 15px 0px rgba(0, 1, 1, 0.25);
 		}
 		&:hover::before {
 			opacity: 1;
