@@ -18483,15 +18483,15 @@ svg.cart__button {
 }
 
 .catalog__item__list .catalog__item {
-  padding-top: 38px;
+  padding-top: 39px;
   max-width: 360px;
   max-height: 576px;
   margin-right: 40px;
   margin-bottom: 73px;
   position: relative;
-  -webkit-transition: 0.3s ease-in-out;
-  -o-transition: 0.3s ease-in-out;
-  transition: 0.3s ease-in-out;
+  -webkit-transition: 0.4s ease-in-out;
+  -o-transition: 0.4s ease-in-out;
+  transition: 0.4s ease-in-out;
   will-change: transform;
   -webkit-box-sizing: content-box;
           box-sizing: content-box;
@@ -18506,11 +18506,11 @@ svg.cart__button {
   background-image: url(../img/browser.svg);
   background-repeat: no-repeat;
   background-size: contain;
-  opacity: 0.3;
+  opacity: 0.14;
   background-position: top center;
-  -webkit-transition: 0.3s ease-in-out;
-  -o-transition: 0.3s ease-in-out;
-  transition: 0.3s ease-in-out;
+  -webkit-transition: 0.4s ease-in-out;
+  -o-transition: 0.4s ease-in-out;
+  transition: 0.4s ease-in-out;
   will-change: opacity;
 }
 
@@ -18559,9 +18559,9 @@ svg.cart__button {
 
 .catalog__item__list .catalog__item:hover .catalog__item__wrapper {
   opacity: 1;
-  -webkit-transition: all 0.3s ease-in-out;
-  -o-transition: all 0.3s ease-in-out;
-  transition: all 0.3s ease-in-out;
+  -webkit-transition: all 0.4s ease-in-out;
+  -o-transition: all 0.4s ease-in-out;
+  transition: all 0.4s ease-in-out;
 }
 
 .catalog__item__list .catalog__item__title {
@@ -18569,6 +18569,10 @@ svg.cart__button {
   font-weight: 700;
   margin-bottom: 20px;
   text-transform: uppercase;
+}
+
+.catalog__item__list .catalog__item__img {
+  width: 100%;
 }
 
 .catalog__item__list .catalog__item__desc {
