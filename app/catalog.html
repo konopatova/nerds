@@ -34,13 +34,13 @@
 								<a href="index.html" class="menu__item__link">Студия</a>
 							</li>
 							<li class="menu__item">
-								<a href="#" class="menu__item__link">Клиенты</a>
+								<a href="/" class="menu__item__link">Клиенты</a>
 							</li>
 							<li class="menu__item active">
-								<a href="#" class="menu__item__link">Магазин</a>
+								<a href="/" class="menu__item__link">Магазин</a>
 							</li>
 							<li class="menu__item">
-								<a href="#" class="menu__item__link">Контакты</a>
+								<a href="/" class="menu__item__link">Контакты</a>
 							</li>
 						</ul>
 
@@ -65,7 +65,7 @@
 					<form class="form-filters" action="https://echo.htmlacademy.ru" method="GET">
 
 						<fieldset class="form-filters__fieldset form-filters__price">
-							<legend class="form-filters__legend">Стоимость:</legend>
+							<legend class="form-filters__legend form-filters__legend--price">Стоимость:</legend>
 
 								<div class="price-filter form-filters__price-filter">
 									<div class="price-filter__range">
@@ -87,7 +87,7 @@
 
 						<fieldset class="form-filters__fieldset form-filters__grid">
 								<legend class="form-filters__legend">Сетка:</legend>
-										<ul class="form-filters__input-wrapper">
+										<ul class="form-filters__input__wrapper">
 											<li class="form-filters__input-group">
 												<input class="form-filters__radio hidden" type="radio" id="filter-adaptive" name="grid" value="adaptive" checked="checked">
 												<label class="form-filters__label form-filters__label-radio" for="filter-adaptive">Адаптивная</label></li>
@@ -103,7 +103,7 @@
 						<fieldset class="form-filters__fieldset form-filters__features">
 							<legend class="form-filters__legend">Особенности:</legend>
 
-							<ul class="form-filters__input-wrapper">
+							<ul class="form-filters__input__wrapper">
 								<li class="form-filters__input-group">
 									<input class="form-filters__checkbox hidden" type="checkbox" id="filter-slider" name="features" value="slider" checked="checked">
 									<label class="form-filters__label form-filters__label-checkbox" for="filter-slider">Слайдер</label></li>
@@ -128,7 +128,7 @@
 			<section class="catalog__block">
 				<div class="catalog__sort">
 					<legend class="sort__legend">Сортировать:</legend>
-					<div class="catalog__sort-type-wrapper">
+					<div class="catalog__sort-type__wrapper">
 
 						<ul class="catalog__sort-type sort-type">
 							<li class="sort-type__item"><a class="sort-type__link sort-type__link active">По цене</a></li>
@@ -143,6 +143,64 @@
 							
 						</div>
 				</div>
+
+				<ul class="catalog__item__list">
+						<li class="catalog__item">
+							<a href="/" class="product__item__link"><img src="./img/img-sedona.png" alt="product 1 - sedona" class="catalog__item__img img-responsive"></a>
+							<div class="catalog__item__wrapper">
+								<h2 class="catalog__item__title">Sedona</h2>
+							<p class="catalog__item__desc">Информационный сайт  для туристов							
+							</p>
+							<button class="btn btn--red catalog__item__price">9 900 руб.</button>
+						</div>
+						</li>
+						
+						<li class="catalog__item">
+							<img src="./img/img-pink.png" alt="product 2 - pink" class="catalog__item__img img-responsive">
+							<div class="catalog__item__wrapper">
+								<h2 class="catalog__item__title">Pink app</h2>
+							<p class="catalog__item__desc">Продуктовый лендинг приложения для iOS и Android</p>
+							<button class="btn btn--red catalog__item__price">9 900 руб.</button>
+						</div>
+						</li>
+
+						<li class="catalog__item">
+							<img src="./img/img-barbershop.png" alt="product 3 - barbershop" class="catalog__item__img img-responsive">
+							<div class="catalog__item__wrapper">
+								<h2 class="catalog__item__title">Barbershop</h2>
+							<p class="catalog__item__desc">Сайт салоны красоты. Для мужчин, да.</p>
+							<button class="btn btn--red catalog__item__price">9 900 руб.</button>
+						</div>
+						</li>
+
+						<li class="catalog__item">
+							<img src="./img/img-mishka.png" alt="product 4 - mishka" class="catalog__item__img img-responsive">
+							<div class="catalog__item__wrapper">
+								<h2 class="catalog__item__title">Mishka</h2>
+							<p class="catalog__item__desc">Интернет-магазин вязаных игрушек</p>
+							<button class="btn btn--red catalog__item__price">9 900 руб.</button>
+						</div>
+						</li>
+
+						<li class="catalog__item">
+							<img src="./img/img-aplus.png" alt="product 5 - a plus" class="catalog__item__img img-responsive">
+							<div class="catalog__item__wrapper">
+								<h2 class="catalog__item__title">A Plus</h2>
+							<p class="catalog__item__desc">Лендинг курсов повышения квалификации</p>
+							<button class="btn btn--red catalog__item__price">9 900 руб.</button>
+						</div>
+						</li>
+
+						<li class="catalog__item">
+							<img src="./img/img-kvast.jpg" alt="product 6 - kvast" class="catalog__item__img img-responsive">
+							<div class="catalog__item__wrapper">
+								<h2 class="catalog__item__title">Кваст</h2>
+							<p class="catalog__item__desc">Промо-сайт производителя крафтового кваса</p>
+							<button class="btn btn--red catalog__item__price">9 900 руб.</button>
+						</div>
+						</li>
+
+				</ul>
 			</section>
 			</div>
 	</div>
