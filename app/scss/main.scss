@@ -893,7 +893,7 @@ margin-bottom: 80px;
 	}
 	.form-filters__radio:disabled ~ .form-filters__label-radio::before,
 	.form-filters__radio:disabled ~ .form-filters__label {
-		color: #b3b4b5;
+		color: #4d4d4d;
 		opacity: 0.3;
 		transition: all 0.3s linear;
 	}
@@ -936,7 +936,7 @@ margin-bottom: 80px;
 	}
 	.form-filters__checkbox:disabled ~ .form-filters__label-checkbox::before,
 	.form-filters__checkbox:disabled ~ .form-filters__label {
-		color: #b3b4b5;
+		color: #4d4d4d;
 		opacity: 0.4;
 		transition: all 0.3s ease-in;
 	}
