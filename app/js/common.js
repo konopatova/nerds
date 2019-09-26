@@ -5,16 +5,10 @@ $(document).ready(function(){
 		speed: 300,
 		slidesToShow: 1,
 		adaptiveHeight: false,
+		mobileFirst:true,
 		responsive: [
 			{
-				breakpoint: 1600,
-				settings: {
-					dots: true,
-					arrows: false,
-				}
-			},
-			{
-				breakpoint: 1024,
+				breakpoint:  1024,
 				settings: {
 					dots: true,
 					arrows: false,
@@ -32,6 +26,7 @@ $(document).ready(function(){
 				settings: {
 					dots: false,
 					arrows: true,
+					variableWidth: true
 				}
 			},
 			{
@@ -39,6 +34,7 @@ $(document).ready(function(){
 				settings: {
 						dots: false,
 						arrows: true,
+						variableWidth: true
 				}
 			}
 			// You can unslick at a given breakpoint now by adding:
@@ -73,9 +69,6 @@ function initMap() {
 	})
 }
 
-/*document.getElementById('btn__write-us').addEventListener('click', 
-function() {
-document.querySelector('.modal__callback').style.display = 'block';});*/
 
 $(document).ready(function(){
   // Feedback form

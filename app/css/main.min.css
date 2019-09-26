@@ -17540,13 +17540,20 @@ svg.cart__button {
   border-radius: 100%;
 }
 
+.slick-arrow {
+  position: absolute;
+  top: 150px;
+  -webkit-transform: translate(0, 50%);
+      -ms-transform: translate(0, 50%);
+          transform: translate(0, 50%);
+}
+
 .slick-prev:before,
 .slick-next:before {
   width: 40px;
   height: 40px;
   display: block;
   position: relative;
-  margin-top: -220px;
   font-family: "slick";
   border-radius: 100%;
   font-size: 32px;
@@ -18438,12 +18445,14 @@ svg.cart__button {
   width: 12px;
   height: 12px;
   background-image: url(../img/icon-down-dir.svg);
+  background-repeat: no-repeat;
 }
 
 .sort-dir .sort-dir__link--up:before {
   width: 12px;
   height: 12px;
   background-image: url(../img/icon-up-dir.svg);
+  background-repeat: no-repeat;
 }
 
 .catalog__item__list {
@@ -18474,6 +18483,7 @@ svg.cart__button {
 }
 
 .catalog__item__list .catalog__item {
+  padding-top: 38px;
   max-width: 360px;
   max-height: 576px;
   margin-right: 40px;
@@ -18483,6 +18493,25 @@ svg.cart__button {
   -o-transition: 0.3s ease-in-out;
   transition: 0.3s ease-in-out;
   will-change: transform;
+  -webkit-box-sizing: content-box;
+          box-sizing: content-box;
+}
+
+.catalog__item__list .catalog__item::before {
+  content: '';
+  width: 100%;
+  height: 100%;
+  position: absolute;
+  top: 0;
+  background-image: url(../img/browser.svg);
+  background-repeat: no-repeat;
+  background-size: contain;
+  opacity: 0.3;
+  background-position: top center;
+  -webkit-transition: 0.3s ease-in-out;
+  -o-transition: 0.3s ease-in-out;
+  transition: 0.3s ease-in-out;
+  will-change: opacity;
 }
 
 .catalog__item__list .catalog__item:nth-child(2n) {
@@ -18493,6 +18522,10 @@ svg.cart__button {
   -webkit-transform: scale(1.05);
       -ms-transform: scale(1.05);
           transform: scale(1.05);
+}
+
+.catalog__item__list .catalog__item:hover::before {
+  opacity: 1;
 }
 
 .catalog__item__list .catalog__item__wrapper {
@@ -18520,6 +18553,8 @@ svg.cart__button {
   width: 100%;
   min-height: 231px;
   will-change: opacity;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
 }
 
 .catalog__item__list .catalog__item:hover .catalog__item__wrapper {
