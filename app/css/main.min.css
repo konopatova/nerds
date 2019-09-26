@@ -18069,12 +18069,12 @@ svg.cart__button {
 
 .socials svg.instagram__button {
   margin-top: 37%;
-  margin-left: 36%;
+  margin-left: 38%;
 }
 
 .socials svg.fb__button {
-  margin-top: 34%;
-  margin-left: 41%;
+  margin-top: 36%;
+  margin-left: 42%;
 }
 
 .socials svg.vk__button {
@@ -18489,9 +18489,9 @@ svg.cart__button {
   margin-right: 40px;
   margin-bottom: 73px;
   position: relative;
-  -webkit-transition: 0.4s ease-in-out;
-  -o-transition: 0.4s ease-in-out;
-  transition: 0.4s ease-in-out;
+  -webkit-transition: 0.35s ease-in-out;
+  -o-transition: 0.35s ease-in-out;
+  transition: 0.35s ease-in-out;
   will-change: transform, box-shadow;
   -webkit-box-sizing: content-box;
           box-sizing: content-box;
@@ -18508,9 +18508,9 @@ svg.cart__button {
   background-size: contain;
   opacity: 0.14;
   background-position: top center;
-  -webkit-transition: 0.4s ease-in-out;
-  -o-transition: 0.4s ease-in-out;
-  transition: 0.4s ease-in-out;
+  -webkit-transition: 0.35s ease-in-out;
+  -o-transition: 0.35s ease-in-out;
+  transition: 0.35s ease-in-out;
   will-change: opacity;
 }
 
@@ -18561,9 +18561,9 @@ svg.cart__button {
 
 .catalog__item__list .catalog__item:hover .catalog__item__wrapper {
   opacity: 1;
-  -webkit-transition: all 0.4s ease-in-out;
-  -o-transition: all 0.4s ease-in-out;
-  transition: all 0.4s ease-in-out;
+  -webkit-transition: all 0.35s ease-in-out;
+  -o-transition: all 0.35s ease-in-out;
+  transition: all 0.35s ease-in-out;
 }
 
 .catalog__item__list .catalog__item__title {
@@ -18596,6 +18596,42 @@ svg.cart__button {
   word-wrap: break-word;
   overflow: auto;
   white-space: normal;
+}
+
+.pagination {
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  margin: 0;
+  padding-left: 0;
+  font-weight: 500;
+  text-transform: uppercase;
+  color: black;
+  margin-bottom: 60px;
+}
+
+.pagination .btn {
+  width: 7%;
+  padding: 9px 20px;
+  margin-right: 10px;
+  width: 52px;
+  line-height: 26px;
+}
+
+.pagination .btn:last-child {
+  margin-right: 0;
+}
+
+.pagination .btn.btn--next {
+  width: 260px;
+  padding: 9px 56px;
+}
+
+.pagination .pagination__link.btn.active,
+.pagination .pagination__link:active {
+  background-color: white;
+  border: 2px solid #d8d7d7;
 }
 
 /*==========  Desktop First  ==========*/

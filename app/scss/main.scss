@@ -737,11 +737,11 @@ margin-bottom: 80px;
 		position: relative;
 		&.instagram__button {
 			margin-top: 37%;
-			margin-left: 36%;
+			margin-left: 38%;
 		}
 		&.fb__button {
-			margin-top: 34%;
-			margin-left: 41%;
+			margin-top: 36%;
+			margin-left: 42%;
 		}
 		&.vk__button {
 			margin-top: 43%;
@@ -1058,7 +1058,7 @@ margin-bottom: 80px;
 		margin-right: 40px;
 		margin-bottom: 73px;
 		position: relative;
-		transition: 0.4s ease-in-out;
+		transition: 0.35s ease-in-out;
 		will-change: transform, box-shadow;
 		box-sizing: content-box;
 		&::before {
@@ -1072,7 +1072,7 @@ margin-bottom: 80px;
 			background-size: contain;
 			opacity: 0.14;
 			background-position: top center;
-			transition: 0.4s ease-in-out;
+			transition: 0.35s ease-in-out;
 			will-change: opacity;
 		}
 		&:nth-child(2n) {
@@ -1107,7 +1107,7 @@ margin-bottom: 80px;
 	.catalog__item:hover .catalog__item__wrapper {
 	 // display: block;
 		opacity: 1;
-		transition: all 0.4s ease-in-out;
+		transition: all 0.35s ease-in-out;
 	}
 	.catalog__item__title {
 		font-size: 18px;
@@ -1137,7 +1137,35 @@ margin-bottom: 80px;
 			white-space: normal;
 			}
 	}
+}
 
+.pagination {
+	display: flex;
+	margin: 0;
+	padding-left: 0;
+	font-weight: 500;
+	text-transform: uppercase;
+	color: black;
+	margin-bottom: 60px;
+	.btn {
+	 width: 7%;
+	 padding: 9px 20px;
+	 margin-right: 10px;
+	 width:52px;
+	 line-height: 26px;
+	 &:last-child {
+		 margin-right: 0;
+	 }
+	}
+	.btn.btn--next {
+		width: 260px;
+		padding: 9px 56px;
+	}
+	.pagination__link.btn.active,
+	.pagination__link:active {
+		background-color: white;
+		border: 2px solid #d8d7d7;
+	}
 }
 
 
