@@ -18343,7 +18343,7 @@ svg.cart__button {
   margin-bottom: 58px;
 }
 
-.catalog__block .catalog__sort .sort__legend {
+.catalog__block .catalog__sort .sort__title {
   max-width: 360px;
   font-size: 16px;
   text-transform: uppercase;
