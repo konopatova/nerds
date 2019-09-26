@@ -18479,17 +18479,24 @@ svg.cart__button {
   margin-right: 40px;
   margin-bottom: 73px;
   position: relative;
+  -webkit-transition: 0.3s ease-in-out;
+  -o-transition: 0.3s ease-in-out;
+  transition: 0.3s ease-in-out;
+  will-change: transform;
 }
 
 .catalog__item__list .catalog__item:nth-child(2n) {
   margin-right: 0;
 }
 
+.catalog__item__list .catalog__item:hover {
+  -webkit-transform: scale(1.05);
+      -ms-transform: scale(1.05);
+          transform: scale(1.05);
+}
+
 .catalog__item__list .catalog__item__wrapper {
-  display: -webkit-box;
-  display: -webkit-flex;
-  display: -ms-flexbox;
-  display: flex;
+  opacity: 0;
   -webkit-box-orient: vertical;
   -webkit-box-direction: normal;
   -webkit-flex-flow: column wrap;
@@ -18503,15 +18510,23 @@ svg.cart__button {
   -webkit-align-items: center;
       -ms-flex-align: center;
           align-items: center;
-  position: absolute;
   overflow: hidden;
   text-align: center;
   padding: 35px 60px;
+  position: absolute;
   bottom: 0;
   left: 0;
+  background-color: white;
   width: 100%;
   min-height: 231px;
-  background-color: white;
+  will-change: opacity;
+}
+
+.catalog__item__list .catalog__item:hover .catalog__item__wrapper {
+  opacity: 1;
+  -webkit-transition: all 0.3s ease-in-out;
+  -o-transition: all 0.3s ease-in-out;
+  transition: all 0.3s ease-in-out;
 }
 
 .catalog__item__list .catalog__item__title {
