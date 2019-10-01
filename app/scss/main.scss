@@ -1022,7 +1022,7 @@ margin-bottom: 80px;
 		}
 		&:hover::before,
 		&:active::before,
-		&.active::before, {
+		&.active::before {
 			opacity: 1;
 		}
 	}
