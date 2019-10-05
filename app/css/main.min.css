@@ -18064,21 +18064,21 @@ svg.cart__button {
 .socials svg {
   width: 26px;
   height: 26px;
-  position: relative;
+  position: absolute;
 }
 
 .socials svg.instagram__button {
-  margin-top: 37%;
-  margin-left: 38%;
+  margin-top: 36%;
+  margin-left: 35%;
 }
 
 .socials svg.fb__button {
-  margin-top: 36%;
-  margin-left: 42%;
+  margin-top: 34%;
+  margin-left: 33%;
 }
 
 .socials svg.vk__button {
-  margin-top: 43%;
+  margin-top: 34%;
   margin-left: 34%;
 }
 
